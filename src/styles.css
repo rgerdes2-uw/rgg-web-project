@@ -1,0 +1,101 @@
+html {
+  min-width: 320px;
+}
+
+body {
+  margin: 0;
+  background: #fff8fc;
+  color: #342a3a;
+}
+
+.app-header {
+  background: #57407c;
+  border-bottom: 4px solid #f29ab2;
+  box-shadow: 0 4px 14px rgb(72 45 94 / 22%);
+  padding-block: 0.85rem;
+}
+
+.app-title {
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.app-title:hover,
+.app-title:focus {
+  color: #fff;
+}
+
+.app-nav {
+  gap: 0.65rem;
+}
+
+.app-header .app-nav-link {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+  min-width: 7rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: background-color 150ms ease, border-color 150ms ease,
+    transform 150ms ease;
+}
+
+.app-header .app-nav-link:hover {
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.app-header .app-nav-link:focus-visible {
+  box-shadow: 0 0 0 3px rgb(255 255 255 / 55%);
+  outline: 0;
+}
+
+.dashboard-link {
+  background: #2878d0;
+}
+
+.dashboard-link:hover,
+.app-header .dashboard-link.active {
+  background: #1764b8;
+  border-color: #a9d7ff;
+}
+
+.budgets-link {
+  background: #d94d91;
+}
+
+.budgets-link:hover,
+.app-header .budgets-link.active {
+  background: #bd3678;
+  border-color: #ffc1df;
+}
+
+.expenses-link {
+  background: #e66c35;
+}
+
+.expenses-link:hover,
+.app-header .expenses-link.active {
+  background: #c95321;
+  border-color: #ffd0ac;
+}
+
+.app-header .app-nav-link.active {
+  box-shadow: 0 3px 0 rgb(0 0 0 / 28%);
+}
+
+.page-shell {
+  max-width: 960px;
+}
+
+@media (max-width: 767.98px) {
+  .app-nav {
+    padding-top: 1rem;
+  }
+
+  .app-header .app-nav-link {
+    width: 100%;
+  }
+}
